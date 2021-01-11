@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$primary: #81a50a;
+$secondary: #bc6c25;
+$tertiary: #dda15e;
+$dark-green: #405300;
+$grey: rgb(104, 104, 104);
+
+* {
+    font-family: 'Roboto';
+}
+
+.home-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/coffeeshop.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    .hero {
+        background: white;
+        padding: 50px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    h2 {
+        margin: 5px;
+        color: black;
+        font-size: 40px;
+    }
+    a {
+        cursor: pointer;
+        padding: 3px 10px;
+        text-decoration: none;
+        text-align: center;
+        background: black;
+        color: white;
+        border-radius: 15px;
+    }
+    a:hover {
+        color: darkgreen;
+    }
+}
+
+.blog-btn {
+    a {
+        padding: 5px 10px;
+        display: flex;
+        background: black;
+        color: white;
+        border-radius: 15px;
+    }
+}
+
+.blog-image {
+    max-width: 200px;
+}
+
+.blogPost {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    .blogPost-title {
+        text-decoration: underline;
+    }
+    .blogPost-date {
+        font-size: 12px;
+    }
+    .blogPost-text {
+        margin-top: 8px;
+    }
+}
