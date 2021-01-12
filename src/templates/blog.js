@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../pages/components/layout'
 import { Radar } from 'react-chartjs-2'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 

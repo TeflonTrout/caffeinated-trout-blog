@@ -17,7 +17,7 @@ const About = () => {
                     This newfound passion led me into the deeper subject of coffee. Up to this point I knew that I enjoyed a good cup of java but I didn't realize the depth of the subject.
                     As with tea, I immursed myself in the subject and I haven't looked back since!
                     After almost 6 years of drinking coffee, I have decided to document my journey for others to learn from my knowledge.
-                    Included in my blog will be notes regarding:
+                    Included in my blog will be notes regarding:</p>
                     <ul>
                         <li>Tasting Notes</li>
                         <li>Brewing Methods</li>
@@ -25,7 +25,7 @@ const About = () => {
                         <li>Coffee Sourcing</li>
                         <li>And much more!</li>
                     </ul>
-                    Have a look around at some blog posts and I'm sure there is something that may interest you.</p>
+                    <p>Have a look around at some blog posts and I'm sure there is something that may interest you.</p>
                 </div>
             </Layout>
         </div>
