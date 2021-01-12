@@ -105,20 +105,22 @@ const Blog = (props) => {
 
     return (
         <Layout>
-            <div className={blogStyles.postHeader}>
-                <h1 className={blogStyles.postTitle}>{props.data.contentfulTastingNotePost.title}</h1>
-                <p className={blogStyles.postDate}>{props.data.contentfulTastingNotePost.postDate}</p>
-            </div>
-            <div className={blogStyles.divBreak}>
-                <span className={blogStyles.lineBreak}></span>
-            </div>
-            <div className={blogStyles.postContainer}>
-                <p className={blogStyles.postContent}>{documentToReactComponents(props.data.contentfulTastingNotePost.blogEntry.json)}</p>
-                <Radar 
-                className={blogStyles.postChart}
-                data={notesData}
-                options={chartOptions}
-                />
+            <div className={blogStyles.blogPostPage}>
+                <div className={blogStyles.postHeader}>
+                    <h1 className={blogStyles.postTitle}>{props.data.contentfulTastingNotePost.title}</h1>
+                    <p className={blogStyles.postDate}>{props.data.contentfulTastingNotePost.postDate}</p>
+                </div>
+                <div className={blogStyles.divBreak}>
+                    <span className={blogStyles.lineBreak}></span>
+                </div>
+                <div className={blogStyles.postContainer}>
+                    <p className={blogStyles.postContent}>{documentToReactComponents(props.data.contentfulTastingNotePost.blogEntry.json)}</p>
+                    <Radar 
+                    className={blogStyles.postChart}
+                    data={notesData}
+                    options={chartOptions}
+                    />
+                </div>
             </div>
         </Layout>
     )

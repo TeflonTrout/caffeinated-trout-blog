@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.blogPostPage {
+  min-height: 90vh;
+}
+
 .postHeader {
   padding-top: 10px;
   display: -webkit-box;

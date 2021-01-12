@@ -23,19 +23,21 @@ const Blog = () => {
 
     return (
         <Layout>
+          <div className={blogStyle.page}>
             <h1 className={blogStyle.heading}>Blog Posts</h1>
             <ol className={blogStyle.posts}>
                 {data.allContentfulTastingNotePost.edges.map(edge => {
-                    return (
-                        <li className={blogStyle.post}>
+                  return (
+                    <li className={blogStyle.post}>
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <h2>{edge.node.title}</h2>
                                 <p>{edge.node.postDate}</p>
                             </Link>
                         </li>
                     )
-                })}
+                  })}
             </ol>
+          </div>
         </Layout>            
     )
 }
