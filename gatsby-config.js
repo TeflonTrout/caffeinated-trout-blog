@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-playground",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
       options: {

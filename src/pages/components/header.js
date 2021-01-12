@@ -21,9 +21,9 @@ const Header = () => {
                         <h1 className={headerStyles.headingTitle}>
                             <Link className={headerStyles.headingTitle} to='/'>{data.site.siteMetadata.title}</Link>
                         </h1>
-                        <li className={headerStyles.li}>
+                        {/* <li className={headerStyles.li}>
                             <Link className={headerStyles.link} to='/'>Home</Link>
-                        </li>
+                        </li> */}
                         <li className={headerStyles.li}>
                             <Link className={headerStyles.link} to='/about'>About</Link>
                         </li>

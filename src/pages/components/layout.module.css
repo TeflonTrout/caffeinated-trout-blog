@@ -9,10 +9,4 @@
           flex-direction: column;
   min-height: 100vh;
 }
-
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 /*# sourceMappingURL=layout.module.css.map */

@@ -1,8 +1,9 @@
 import React from 'react'
+import footerStyle from './footer.module.css'
 
 const footer = () => {
     return (
-        <footer>
+        <footer className={footerStyle.footer}>
             <p>Created by TeflonTrout, ©</p>
         </footer>
     )

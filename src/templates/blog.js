@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../pages/components/layout'
+import blogStyles from './blog.module.css'
 import { Radar } from 'react-chartjs-2'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
@@ -27,6 +28,36 @@ const Blog = (props) => {
 
     //Set other Variables
     let noteValues = [];
+    let chartOptions = {
+        legend: {
+            display: false
+        },
+        scale: {
+            yAxes: {
+                ticks: {
+                    min: 0,
+                    max: 10
+                }
+            },
+            ticks: {
+                display: false,
+                beginAtZero: true,
+                fontSize: 20,
+                min: 0,
+                max: 10,
+                suggestedMax: 0
+            },
+            pointLabels: {
+                fontSize: 25
+            },
+            gridLines: {
+                color: 'red'
+            },
+            angleLines : {
+                color: 'red'
+            },
+        }
+    }
 
     //Tasting Notes Name Array
     const tastingNotes = ["Earthy","Herbal","Sweet","Sour","Savory","Chocolate","Berry","Smokey"];
@@ -40,12 +71,33 @@ const Blog = (props) => {
                 labels: tastingNotes,
                 datasets: [
                     {
-                        label: "NOTES",
+                        label: "Value",
                         data: noteValues,
-                        backgroundColor: ['rgba(255, 99, 132, 0.6)']
+                        backgroundColor: ['rgba(0, 234, 82, 0.3)'],
+                        pointRadius: 5,
+                        pointHoverRadius: 10,
+                        hoverBackgroundColor: ['rgba(0, 0, 0, 0)'],
+                        borderColor: 'rgb(0,0,0)',
+                        borderWidth: 1,
+                        hoverBorderColor: ['rgba(0,0,0,0.6)'],
+                        pointBorderColor: 'rgb(0,0,0)',
+                        pointBackgroundColor: 'red',
+                        pointLabelFontSize: 25
                     }
                 ],
-                borderWidth: 1
+                options: {
+                    scale: {
+                        pointLabels: {
+                            fontSize: 25
+                        },
+                        gridLines: {
+                            color: 'rgb(0, 0, 0)'
+                        },
+                        angleLines: {
+                            color: 'rgb(0,0,0)'
+                        }
+                    }
+                },
             });
         }
         chart();
@@ -53,11 +105,20 @@ const Blog = (props) => {
 
     return (
         <Layout>
-            <h1>{props.data.contentfulTastingNotePost.title}</h1>
-            <p>{props.data.contentfulTastingNotePost.postDate}</p>
-            <div>
-                <p>{documentToReactComponents(props.data.contentfulTastingNotePost.blogEntry.json)}</p>
-                <Radar data={notesData} />
+            <div className={blogStyles.postHeader}>
+                <h1 className={blogStyles.postTitle}>{props.data.contentfulTastingNotePost.title}</h1>
+                <p className={blogStyles.postDate}>{props.data.contentfulTastingNotePost.postDate}</p>
+            </div>
+            <div className={blogStyles.divBreak}>
+                <span className={blogStyles.lineBreak}></span>
+            </div>
+            <div className={blogStyles.postContainer}>
+                <p className={blogStyles.postContent}>{documentToReactComponents(props.data.contentfulTastingNotePost.blogEntry.json)}</p>
+                <Radar 
+                className={blogStyles.postChart}
+                data={notesData}
+                options={chartOptions}
+                />
             </div>
         </Layout>
     )

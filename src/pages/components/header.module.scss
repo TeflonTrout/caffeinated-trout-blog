@@ -7,13 +7,13 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: #81a50a;
+    color: rgb(226, 45, 45);
     text-decoration: none;
     font-size: 20px;
 }
 
 .ul {
-    background: black;
+    background: rgb(170, 170, 170);
     padding: 5px 0;
     display: flex;
     width: 100%;
@@ -29,7 +29,8 @@
     }
     a {
         padding: 3px 5px;
-        width: 25%;
+        width: 20%;
+        white-space: nowrap;
         display: flex;
         border-radius: 15px;
         align-items: center;
@@ -38,7 +39,7 @@
         font-size: 25px;
     }
     a:hover {
-        color: #405300;
+        color: rgba($color: #ffffff, $alpha: 0.8);
     }
 }
 
