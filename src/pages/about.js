@@ -7,6 +7,7 @@ const About = () => {
     return (
         <div>
             <Layout>
+                <div className={aboutStyles.aboutPage}>
                 <h1 className={aboutStyles.heading}>About Me</h1>
                 <div className={aboutStyles.aboutContainer}>
                     <p>Hey thanks for stopping by! The name is JT but I go by the pseudonym "TeflonTrout",
@@ -26,6 +27,7 @@ const About = () => {
                         <li>And much more!</li>
                     </ul>
                     <p>Have a look around at some blog posts and I'm sure there is something that may interest you.</p>
+                </div>
                 </div>
             </Layout>
         </div>

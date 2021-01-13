@@ -1,9 +1,12 @@
 .page {
-  min-height: 85vh;
+  min-height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./images/coffeebeansbackground.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/coffeebeansbackground.jpg");
 }
 
 .heading {
   width: 100%;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +17,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .posts {
@@ -54,6 +57,7 @@
 .post a {
   width: 50%;
   background: #f4f4f4;
+  border-radius: 15px;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;

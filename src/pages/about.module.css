@@ -2,8 +2,16 @@
   color: black;
 }
 
+.aboutPage {
+  min-height: 95vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./images/chemex.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/chemex.jpg");
+  color: white;
+}
+
 .heading {
-  margin-top: 15px;
+  color: white;
+  padding-top: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,11 +38,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+}
+
+.aboutContainer ul li {
+  color: white;
 }
 
 .aboutContainer p {
   width: 80%;
   padding: 5px;
+  color: white;
   line-height: 2;
 }
 /*# sourceMappingURL=about.module.css.map */

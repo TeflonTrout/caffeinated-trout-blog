@@ -28,6 +28,9 @@ const Header = () => {
                             <Link className={headerStyles.link} to='/about'>About</Link>
                         </li>
                         <li className={headerStyles.li}>
+                            <Link className={headerStyles.link} to='/brewMethods'>Brew Methods</Link>
+                        </li>
+                        <li className={headerStyles.li}>
                             <Link className={headerStyles.link} to='/blog'>Blog</Link>
                         </li>
                     </ul>

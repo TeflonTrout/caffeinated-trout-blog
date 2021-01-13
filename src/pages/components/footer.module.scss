@@ -1,5 +1,9 @@
 .footer {
     position: relative;
     bottom: 0;
-    background: transparent;
+    background: black;
+    p {
+        padding-left: 15px;
+        color: #aaaaaa;
+    }
 }

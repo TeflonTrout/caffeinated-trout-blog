@@ -60,7 +60,7 @@ const Blog = (props) => {
     }
 
     //Tasting Notes Name Array
-    const tastingNotes = ["Earthy","Herbal","Sweet","Sour","Savory","Chocolate","Berry","Smokey"];
+    const tastingNotes = ["Sweet", "Floral", "Fruity", "Sour", "Vegetal", "Roasty/Grain", "Spicy", "Nutty", "Chocolate", "Caramel"];
 
     //On Page Render run chart()
     useEffect(() => {
@@ -73,16 +73,14 @@ const Blog = (props) => {
                     {
                         label: "Value",
                         data: noteValues,
-                        backgroundColor: ['rgba(0, 234, 82, 0.3)'],
-                        pointRadius: 5,
-                        pointHoverRadius: 10,
+                        backgroundColor: ['rgba(156, 156, 156, 0.7)'],
+                        pointRadius: 2,
+                        pointHoverRadius: 4,
                         hoverBackgroundColor: ['rgba(0, 0, 0, 0)'],
                         borderColor: 'rgb(0,0,0)',
                         borderWidth: 1,
-                        hoverBorderColor: ['rgba(0,0,0,0.6)'],
-                        pointBorderColor: 'rgb(0,0,0)',
                         pointBackgroundColor: 'red',
-                        pointLabelFontSize: 25
+                        pointLabelFontSize: 25,
                     }
                 ],
                 options: {
@@ -115,6 +113,7 @@ const Blog = (props) => {
                 </div>
                 <div className={blogStyles.postContainer}>
                     <p className={blogStyles.postContent}>{documentToReactComponents(props.data.contentfulTastingNotePost.blogEntry.json)}</p>
+                    <br/>
                     <Radar 
                     className={blogStyles.postChart}
                     data={notesData}

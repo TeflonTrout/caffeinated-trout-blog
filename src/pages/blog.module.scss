@@ -1,14 +1,20 @@
 .page {
-    min-height: 85vh;
+    min-height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url('./images/coffeebeansbackground.jpg');
 }
+
 
 .heading {
     width: 100%;
+    color: white;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 15px; 
+    padding-top: 15px; 
 }
 
 .posts {
@@ -31,6 +37,7 @@
     a {
         width: 50%;
         background: #f4f4f4;
+        border-radius: 15px;
         color: black;
         display: flex;
         flex-direction: column;

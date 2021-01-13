@@ -2,8 +2,18 @@
     color: black;
 }
 
+.aboutPage {
+    min-height: 95vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url('./images/chemex.jpg');
+    color: white;
+}
+
 .heading {
-    margin-top: 15px;
+    color: white;
+    padding-top: 15px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -16,9 +26,16 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    color:white;
+    ul {
+        li {
+            color: white;
+        }
+    }
     p {
         width: 80%;
         padding: 5px;
+        color: white;
         line-height: 2;
     }
 }
