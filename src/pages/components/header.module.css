@@ -1,12 +1,44 @@
 * {
-  margin: 0;
+  margin: auto;
 }
 
-.headingTitle {
+.navbarContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  background: #aaaaaa;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.navbarContainer .hamburger {
+  position: absolute;
+  right: 10px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.navbarContainer .headingTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -20,50 +52,53 @@
 
 .ul {
   background: #aaaaaa;
-  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
+  padding: 0;
   text-decoration: none;
   list-style: none;
   text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .ul .li {
   width: 100%;
+  white-space: nowrap;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .ul a {
-  padding: 3px 5px;
-  width: 20%;
-  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-radius: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .ul a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: darkgray;
+  background-color: red;
 }
 
 .link {
