@@ -8,7 +8,9 @@
   display: flex;
   width: 100%;
   padding-bottom: 3px;
-  background: #aaaaaa;
+  background: gray;
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, gray), color-stop(50%, #aaaaaa), color-stop(75%, gray));
+  background: linear-gradient(90deg, gray 25%, #aaaaaa 50%, gray 75%);
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;

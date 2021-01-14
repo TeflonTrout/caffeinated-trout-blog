@@ -16,21 +16,23 @@ $grey: rgb(104, 104, 104);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/coffeeshop.jpg');
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url('../images/coffeebeansbackground.jpg');
     background-position: center;
     background-size: cover;
     height: 90vh;
     .hero {
-        background: white;
-        padding: 50px;
+        padding: 65px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
     }
     h2 {
         margin: 5px;
-        color: black;
-        font-size: 40px;
+        color: white;
+        font-size: 50px;
     }
     a {
         cursor: pointer;
