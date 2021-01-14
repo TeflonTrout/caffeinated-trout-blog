@@ -6,12 +6,12 @@
     display: flex;
     width: 100%;
     padding-bottom: 3px;
-    padding-top: 3px;
     background:rgb(170, 170, 170);
     justify-content: space-evenly;
     position: relative;
     .hamburger {
         position: absolute;
+        height: 100%;
         right: 10px;
         float: right;
         display: flex;
@@ -28,13 +28,14 @@
         align-items: center;
         color: rgb(226, 45, 45);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 35px;
     }
 }
 
 
 .ul {
-    background: rgb(170, 170, 170);
+    position: absolute;
+    background: rgb(129, 129, 129);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -43,13 +44,15 @@
     list-style: none;
     text-align: center;
     justify-content: space-evenly;
+    border-top: 1px solid black;
     .li {
         width: 100%;
         white-space: nowrap;
         text-align: center;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        padding: 5px 0;
     }
     a {
         display: flex;
@@ -59,7 +62,8 @@
         font-size: 20px;
     }
     a:hover {
-        color: darkgray;
+        transition: ease-in 0.2s;
+        color: black;
         background-color: red;
     }
 }
