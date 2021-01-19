@@ -1,19 +1,9 @@
 import React, { useState } from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import headerStyles from './header.module.css'
 import { FaBars } from 'react-icons/fa'
 
 const Header = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         site {
-    //             siteMetadata{
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
-
     const [navbarState, setNavbarState] = useState(false)
         
     const navbarToggle = (e) => {

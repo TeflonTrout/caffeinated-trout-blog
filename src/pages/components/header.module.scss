@@ -22,6 +22,7 @@ background: linear-gradient(90deg, rgba(128,128,128,1) 25%, rgba(170,170,170,1) 
         cursor: pointer;
     }
     .headingTitle {
+        white-space: nowrap;
         display: flex;
         float: left;
         width: 50%;

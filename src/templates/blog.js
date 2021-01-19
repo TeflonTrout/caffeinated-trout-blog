@@ -48,7 +48,7 @@ const Blog = (props) => {
                 suggestedMax: 0
             },
             pointLabels: {
-                fontSize: 25
+                fontSize: 15
             },
             gridLines: {
                 color: 'red'
@@ -60,7 +60,7 @@ const Blog = (props) => {
     }
 
     //Tasting Notes Name Array
-    const tastingNotes = ["Sweet", "Floral", "Fruity", "Sour", "Vegetal", "Roasty/Grain", "Spicy", "Nutty", "Chocolate", "Caramel"];
+    const tastingNotes = ["Sweet", "Floral", "Fruity", "Sour", "Vegetal", "Roasty", "Spicy", "Nutty", "Chocolate", "Caramel"];
 
     //On Page Render run chart()
     useEffect(() => {
